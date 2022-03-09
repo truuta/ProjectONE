@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+body {
+    background-image: linear-gradient(to top, #0a0a0a 0%, #131518 100%);
+}
+
+.users {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    position: absolute;
+    left: 80px;
+    top: -52;
+    font-weight: 800;
+    font-size: 75px;
+    background: #2C14FF;
+    background: -webkit-linear-gradient(to right, #2C14FF 0%, #00BACF 100%);
+    background: -moz-linear-gradient(to right, #2C14FF 0%, #00BACF 100%);
+    background: linear-gradient(to right, #2C14FF 0%, #00BACF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.userbotto {
+    position: absolute;
+    top: 70px;
+    left: 80px;
+    border-radius: 30px;
+    width: 210px;
+    height: 10px;
+    background: -webkit-linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+    background: -moz-linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, #ffffff 100%);
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    z-index: -1;
+}
+
+.backbutton {
+    position: absolute;
+    top: 30;
+    left: 5px;
+    border-radius: 30px;
+    width: 60px;
+    height: 50px;
+    background: -webkit-linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+    background: -moz-linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, #ffffff 100%);
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    image-rendering: arrow.png;
+    z-index: -1;
+}
+
+.backbutton [src="arrow.png"] {
+    height: 27px;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color
+}
+
+.nome {
+    position: absolute;
+    top: 108;
+    left: 20px;
+    border-radius: 90px;
+    width: 180px;
+    height: 45px;
+    background: #0077ff;
+}
+
+.nometype {
+    color: #ffffff;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    top: 110;
+    left: 80;
+}
+
+.usersbg {
+    position: absolute;
+    top: 160;
+    left: 20px;
+    border-radius: 15px;
+    width: 180px;
+    height: 900px;
+    background: white;
+}
+
+.CPF {
+    position: absolute;
+    top: 108;
+    left: 220px;
+    border-radius: 90px;
+    width: 180px;
+    height: 45px;
+    background: #0077ff;
+}
+
+.cpftype {
+    color: #ffffff;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    top: 110;
+    left: 295;
+}
+
+.usersbg2 {
+    position: absolute;
+    top: 160;
+    left: 220px;
+    border-radius: 15px;
+    width: 180px;
+    height: 900px;
+    background: white;
+}
+
+.nasc {
+    position: absolute;
+    top: 108;
+    left: 420px;
+    border-radius: 90px;
+    width: 180px;
+    height: 45px;
+    background: #0077ff;
+}
+
+.usersbg3 {
+    position: absolute;
+    top: 160;
+    left: 420px;
+    border-radius: 15px;
+    width: 180px;
+    height: 900px;
+    background: white;
+}
+
+.nasctype {
+    color: #ffffff;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    top: 110;
+    left: 454;
+}
+
+.pesquisa input {
+    padding: 18px;
+    font-size: 20px;
+    border-style:none;
+    border-radius: 25px;
+    position:absolute; top: 17px; left: 300px;
+    float: center;
+    width: 70%;
+    background: #f1f1f1;
+}
+
+.submit {
+    float: center;
+    position: absolute; top: 17px; left: 1640;
+    width: 10%;
+    padding: 20px;
+    background: #ffffff;
+    color: 0077ff;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 25px;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+}

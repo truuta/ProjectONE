@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+body {
+    background-image: linear-gradient(to top, #0a0a0a 0%, #131518 100%);
+
+}
+
+.cabeçalho {
+    font-size: 72px;
+    font-family: 'League Spartan', sans-serif;
+    background: #2C14FF;
+    background: -webkit-linear-gradient(to right, #2C14FF 0%, #00BACF 100%);
+    background: -moz-linear-gradient(to right, #2C14FF 0%, #00BACF 100%);
+    background: linear-gradient(to right, #2C14FF 0%, #00BACF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    left: 400px;
+    top: 20px;
+}
+
+.loginsquare {
+    height: 200px;
+    width: 400px;
+    background: -webkit-linear-gradient(to right, #2C14FF 0%, #00BACF 100%);
+    background: -moz-linear-gradient(to right, #2C14FF 0%, #00BACF 100%);
+    background: linear-gradient(to right, #2C14FF 0%, #00BACF 100%);
+    -webkit-background-clip: border-box;
+    position: absolute;
+    left: 400px;
+    top: 300px;
+    border-radius: 25px;
+}
+
+.email {
+    width: 350;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    position: relative;
+    left: 25px;
+    top: -55px;
+}
+
+.email[placeholder="Digite seu E-mail"] {
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.senha {
+    width: 350;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    position: relative;
+    left: 25px;
+    top: -45px;
+}
+
+.senha[placeholder="Digite sua Senha"] {
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.loginbutton {
+    height: 70px;
+    width: 150px;
+    position: relative;
+    top: 118px;
+    left: 30px;
+    border-radius: 15px;
+    border-style: none;
+    font-family: 'Fredoka', sans-serif;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.registerbutton {
+    height: 70px;
+    width: 150px;
+    position: relative;
+    top: 118px;
+    left: 72px;
+    border-radius: 15px;
+    border-style: none;
+    font-family: 'Fredoka', sans-serif;
+    font-style: italic;
+    font-weight: 800;
+}
