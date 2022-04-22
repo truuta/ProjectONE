@@ -2,13 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
 body {
-    background-image: linear-gradient(to top, #0a0a0a 0%, #131518 100%);
+    background-color: #000000;
 }
 
 .users {
     font-family: 'Lato', sans-serif;
     font-style: italic;
-    font-weight: 800;
     position: absolute;
     left: 80px;
     top: -52;
@@ -39,7 +38,7 @@ body {
 
 .backbutton {
     position: absolute;
-    top: 30;
+    top: 25;
     left: 5px;
     border-radius: 30px;
     width: 60px;
@@ -49,8 +48,7 @@ body {
     background: linear-gradient(to right, rgb(255, 255, 255) 0%, #ffffff 100%);
     -webkit-background-clip: border-box;
     -webkit-text-fill-color: transparent;
-    image-rendering: arrow.png;
-    z-index: -1;
+    background-image: src="arrow.png";
 }
 
 .backbutton [src="arrow.png"] {
@@ -61,117 +59,162 @@ body {
     color
 }
 
-.nome {
-    position: absolute;
-    top: 108;
-    left: 20px;
-    border-radius: 90px;
-    width: 180px;
-    height: 45px;
-    background: #0077ff;
-}
-
-.nometype {
-    color: #ffffff;
-    font-family: 'League Spartan', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    position: absolute;
-    top: 110;
-    left: 80;
-}
-
-.usersbg {
-    position: absolute;
-    top: 160;
-    left: 20px;
-    border-radius: 15px;
-    width: 180px;
-    height: 900px;
-    background: white;
-}
-
-.CPF {
-    position: absolute;
-    top: 108;
-    left: 220px;
-    border-radius: 90px;
-    width: 180px;
-    height: 45px;
-    background: #0077ff;
-}
-
-.cpftype {
-    color: #ffffff;
-    font-family: 'League Spartan', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    position: absolute;
-    top: 110;
-    left: 295;
-}
-
-.usersbg2 {
-    position: absolute;
-    top: 160;
-    left: 220px;
-    border-radius: 15px;
-    width: 180px;
-    height: 900px;
-    background: white;
-}
-
-.nasc {
-    position: absolute;
-    top: 108;
-    left: 420px;
-    border-radius: 90px;
-    width: 180px;
-    height: 45px;
-    background: #0077ff;
-}
-
-.usersbg3 {
-    position: absolute;
-    top: 160;
-    left: 420px;
-    border-radius: 15px;
-    width: 180px;
-    height: 900px;
-    background: white;
-}
-
-.nasctype {
-    color: #ffffff;
-    font-family: 'League Spartan', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    position: absolute;
-    top: 110;
-    left: 454;
-}
-
 .pesquisa input {
     padding: 18px;
     font-size: 20px;
     border-style:none;
     border-radius: 25px;
-    position:absolute; top: 17px; left: 300px;
+    position: absolute; 
+    top: 17px; 
+    left: 300px;
     float: center;
     width: 70%;
-    background: #f1f1f1;
+    background: white;
 }
 
 .submit {
-    float: center;
-    position: absolute; top: 17px; left: 1640;
-    width: 10%;
-    padding: 20px;
+position: absolute;
+left: 1650px;
+top: 17px;
+float: left;
+width: 10%;
+padding: 20px;
+background: #ffffff;
+color: 0077ff;
+font-size: 20px;
+border-style: none;
+border-radius: 25px;
+cursor: pointer;
+}
+
+.usersbg {
+    position: absolute;
+    top: 110;
+    left: 20px;
+    border-radius: 15px;
+    width: 1885px;
+    height: 785px;
+    background: rgb(255, 255, 255)6, 46, 46);
+}
+
+.consulta-class {
+    width: 1840px;
+    height: 800px;
+    position: absolute;
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(14, 14, 14));
+    border-radius: 30px;
+    top: 100;
+    border-style: solid;
+    border-bottom-color: #006eff;
+    border-left-color: #ffffff00;
+    border-right-color: #ffffff00;
+    border-top-color: #006eff;
+    display: flex;
+}
+
+.consulta-class [class="info"] {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    position: absolute;
+    left: 870px;
+    top: -20;
+    font-weight: 600;
+    font-size: 40px;
     background: #ffffff;
-    color: 0077ff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ #gform01 {
+     width: 5px;
+     height: 35px;
+     top: 55px;
+     left: 961px;
+     position: absolute;
+    background-color: #00c3ff;
+    border-radius: 30px;
+ }
+
+ #square{
+    width: 1800px;
+    height: 680px;
+    top: 100px;
+    left: 20px;
+    position: absolute;
+   background-color: #161616;
+   border-radius: 30px;
+ }
+
+ #resultsquare01 {
+    width: 300px;
+    height: 50px;
+    top: 10px;
+    left: 800px;
+    position: absolute;
+   background-color: #ffffff;
+   border-radius: 30px;
+ }
+
+ #resultsquare01 [class="rsqname01"] {
+     position: absolute;
+     left: -70px;
+     top: 0px;
+     font-family: 'Lato', sans-serif;
+     font-style: normal;
+     position: absolute;
+     font-weight: 600;
+     font-size: 20px;
+     background: #ffffff;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+
+ #resultsquare02 {
+    width: 300px;
+    height: 50px;
+    top: 55px;
+    left: 800px;
+    position: relative;
+   background-color: #ffffff;
+   border-radius: 30px;
+ }
+
+
+ #resultsquare02 [class="rsqname02"] {
+    position: relative;
+    left: -120px;
+    top: 15px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    position: relative;
+    font-weight: 600;
     font-size: 20px;
-    border-style: none;
-    border-radius: 25px;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
+    background: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#resultsquare03 {
+    width: 300px;
+    height: 50px;
+    top: 42px;
+    left: 800px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 30px;
+ }
+
+
+ #resultsquare03 [class="rsqname03"] {
+    position: relative;
+    left: -75px;
+    top: 0px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    position: absolute;
+    font-weight: 600;
+    font-size: 20px;
+    background: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
