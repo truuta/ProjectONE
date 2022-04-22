@@ -1,0 +1,75 @@
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Users</title>
+        <link rel="stylesheet" type="text/css" href="users.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1 id="users" class="users">USERS</h1>
+        <div class="userbottom"></div>
+        <a class="backbutton" href=""><img src="arrow.png"></a>
+        <form class="pesquisa" action="action_page.php">
+            <input type="text" placeholder="Pesquisa" name="Pesquisa">
+            <button class="submit" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </header>
+    <main>
+    <div class="consulta-class">
+            <h1 class="info">Resultado</h1>
+            <div id="gform01"></div>
+            <div id="square">
+                <div id="resultsquare01"><h1 class="rsqname01">Nome:</h1><h1 class="result01"></h1></div>
+                <div id="resultsquare02"><h1 class="rsqname02">Sobrenome:</h1><h1 class="result02"></h1></div>
+                <div id="resultsquare03"><h1 class="rsqname03">E-mail:</h1><h1 class="result03"></h1></div>
+                <div>
+                    <canvas id="datechart"></canvas>
+                    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js">
+                        const labels= [
+                            'Janeiro',
+                            'Fevereiro',
+                            'Março',
+                            'Abril',
+                            'Maio',
+                            'Junho',
+                            'Julho',
+                            'Agosto',
+                            'Setembro',
+                            'Outubro',
+                            'Novembro',
+                            'Dezembro'
+                        ];
+
+                        const data = {
+                            labels: labels,
+                            datasets: [{
+                                label: 'Data de criação de conta',
+                                backgroundColor: 'rgb(255, 99, 132)',
+                                borderColor: 'rgb(255, 99, 132)',
+                                data: [0, 10, 5, 2, 20, 30, 45],
+                            }]
+                        };
+
+                        const config = {
+                            type: 'line',
+                            data: data,
+                            options: {}
+                        };
+                    </script>
+                    <script>
+                        const datechart = new Chart(
+                            document.getElementById('datechart'),
+                            config
+                        );
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+        <div class="usersbg"></div>
+    </main> 
+</body>
+</html>
