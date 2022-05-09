@@ -1,109 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Users</title>
     <link rel="stylesheet" type="text/css" href="style/users.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
 
-  <body>
+<body>
     <header>
-      <h1 id="users" class="users">USERS</h1>
-      <a class="backbutton" href="login.html"><img src="image/arrow.png" /></a>
-      <form id="pesquisa" action="users.php" method="post">
-        <input class="input" id="pesquisa" type="text" placeholder="Pesquisa" name="Pesquisa" />
-        <button class="submit" type="submit">
+        <h1 id="users" class="users">USERS</h1>
+        <a class="backbutton" href="index.html"><img src="image/arrow.png" /></a>
+        <form id="pesquisa" action="users.php" method="post">
+            <input class="input" id="pesquisa" type="text" placeholder="Pesquisa" name="Pesquisa" />
+            <button class="submit" type="submit">
           <i class="fa fa-search"></i>
         </button>
-      </form> 
+        </form>
     </header>
-    
+
     <main>
         <div id="bg-square-query01">
-          <h1 class="text-resultado">
-            Resultado
-          </h1>
-          
-          <div id="style-dash">
-          </div>
-          
-          <div id="bg-square-query02">
-              
-            <div id="resultsquare-nome">
-              <h2 class="text-nome">Nome:</h2>
+            <h1 class="text-resultado">
+                Resultado
+            </h1>
+
+            <div id="style-dash">
             </div>
 
-            <div id="resultsquare-sobrenome">
-              <h2 class="text-sobrenome">Sobrenome:</h2>
+            <div id="bg-square-query02">
+
+                <div id="resultsquare-nome">
+                    <h2 class="text-nome">Nome:</h2>
+                </div>
+
+                <div id="resultsquare-sobrenome">
+                    <h2 class="text-sobrenome">Sobrenome:</h2>
+                </div>
+
+                <div id="resultsquare-email">
+                    <h2 class="text-email">E-mail:</h2>
+                </div>
+
+                <div id="resultsquare-cpf">
+                    <h2 class="text-cpf">CPF :</h2>
+                </div>
+
+                <div id="resultsquare-rg">
+                    <h2 class="text-rg">RG :</h2>
+                </div>
             </div>
 
-            <div id="resultsquare-email">
-              <h2 class="text-email">E-mail:</h2>
+            <!--GRÁFICO DATA DE CRIAÇÃO DE CONTAS-->
+            <div id="chart">
+                <canvas id="datechart"></canvas>
+                <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+                <script>
+                    const labels = [
+                        "Janeiro",
+                        "Fevereiro",
+                        "Março",
+                        "Abril",
+                        "Maio",
+                        "Junho",
+                        "Julho",
+                        "Agosto",
+                        "Setembro",
+                        "Outubro",
+                        "Novembro",
+                        "Dezembro",
+                    ];
+
+                    const data = {
+                        labels: labels,
+                        datasets: [{
+                            label: "Contas criadas",
+                            backgroundColor: "rgb(255, 99, 132)",
+                            borderColor: "rgb(255, 99, 132)",
+                            data: [0, 10, 5, 2, 20, 30, 45, 20, 10, 23, 44],
+                        }, ],
+                    };
+
+                    const config = {
+                        type: "line",
+                        data: data,
+                        options: {},
+                    };
+                </script>
+                <script>
+                    const datechart = new Chart(
+                        document.getElementById("datechart"),
+                        config
+                    );
+                </script>
             </div>
-
-            <div id="resultsquare-cpf">
-              <h2 class="text-cpf">CPF :</h2>
-            </div>
-
-            <div id="resultsquare-rg">
-              <h2 class="text-rg">RG :</h2>
-            </div>
-          </div>
-          
-          <!--GRÁFICO DATA DE CRIAÇÃO DE CONTAS-->
-          <div id="chart">
-            <canvas id="datechart"></canvas>
-            <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
-            <script>
-              const labels = [
-                "Janeiro",
-                "Fevereiro",
-                "Março",
-                "Abril",
-                "Maio",
-                "Junho",
-                "Julho",
-                "Agosto",
-                "Setembro",
-                "Outubro",
-                "Novembro",
-                "Dezembro",
-              ];
-
-              const data = {
-                labels: labels,
-                datasets: [
-                  {
-                    label: "Contas criadas",
-                    backgroundColor: "rgb(255, 99, 132)",
-                    borderColor: "rgb(255, 99, 132)",
-                    data: [0, 10, 5, 2, 20, 30, 45, 20, 10, 23, 44],
-                  },
-                ],
-              };
-
-              const config = {
-                type: "line",
-                data: data,
-                options: {},
-              };
-            </script>
-            <script>
-              const datechart = new Chart(
-                document.getElementById("datechart"),
-                config
-              );
-            </script>
-          </div>
 
         </div>
-      </div>
+        </div>
     </main>
-  </body>
+</body>
+
 </html>
