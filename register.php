@@ -1,5 +1,4 @@
 <?php
-include "configs.js";
 
 $host = 'localhost';
 $user = 'root';

@@ -29,5 +29,5 @@ if (mysqli_num_rows($query)!= 1) {
       $_SESSION['UsuarioNivel'] = $resultado['senha'];
 
       // Redireciona o visitante
-      header("Location: users.html"); exit;
+      header("Location: index.html"); exit;
 }

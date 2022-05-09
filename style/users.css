@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+body {
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*SCROLLBAR*/
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #0F2027;  /* fallback for old browsers */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 102, 255);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
+  }
+
+  
+/*   <header>   */
+header {
+    position: absolute;
+}
+/*Botão Voltar*/
+.backbutton {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 19px;
+    padding: 15px;
+    background: -webkit-linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+    background: -moz-linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, #ffffff 100%);
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.backbutton [src="image/arrow.png"] {
+    height: 25px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+/*Botão Voltar*/
+
+/*TEXTO USERS NO TOPO DA TELA*/
+.users {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    position: absolute;
+    left: 80px;
+    top: -70px;
+    font-weight: 800;
+    font-size: 75px;
+    font-size: 72px;
+    background-color: #66e5ff;
+    background-image: linear-gradient(160deg, #66e5ff 0%, #66c0ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*TEXTO USERS NO TOPO DA TELA*/
+
+/* TODA A PARTE DE PESQUISA NO TOPO DA PAGINA*/
+.input {
+    position: relative;
+    top: -3px; 
+    left: 300px;
+    padding: 18px;
+    font-size: 20px;
+    border-style:none;
+    border-radius: 25px;
+    width: 100%;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.submit {
+    position: relative;
+    left: 690px;
+    top: -61px;
+    width: 20%;
+    padding: 19px;
+    background: #ffffff;
+    color: 0077ff;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+/* TODA A PARTE DE PESQUISA NO TOPO DA PAGINA*/
+
+
+/*===============================================================================================================================================*/
+/*   <main>   */
+/*div quadrado de fundo primário*/
+#bg-square-query01 {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 1900px;
+    height: 850px;
+    background-color: #0f202700;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #66bfff77;
+}
+/*div quadrado de funo primário*/
+
+/*TEXTO RESULTADO DENTRO DO QUADRADO PRINCIPAL*/
+.text-resultado {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    position: relative;
+    left: 870px;
+    top: -20px;
+    font-weight: 600;
+    font-size: 40px;
+    background: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*TEXTO RESULTADO DENTRO DO QUADRADO PRINCIPAL*/
+
+
+ /*TRAÇO DE ESTILO ABAIXO DO "RESULTADO"*/
+ #style-dash {
+    position: relative;
+    width: 5px;
+    height: 35px;
+    top: -40px;
+    left: 961px;
+    background-color: #00c3ff;
+    border-radius: 30px;
+ }
+ /*TRAÇO DE ESTILO ABAIXO DO "RESULTADO"*/
+
+ /*div quadrado de fundo secundário onde aparecem os resultados pesquisados*/
+ #bg-square-query02{
+   position: relative;
+   width: 1890px;
+   height: 735px;
+   top: -45px;
+   left: 5px;
+   background-color: #00000056;
+   border-radius: 30px;
+ }
+/*div quadrado de fundo secundário onde aparecem os resultados pesquisados*/
+
+/*div com o quadrado com o resultado da pesquisa e ao lado o texto "Nome:"*/
+ #resultsquare-nome {
+    width: 300px;
+    height: 50px;
+    top: 10px;
+    left: 80px;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 30px;
+ }
+
+ #resultsquare-nome [class="text-nome"] {
+    position: relative;
+    left: -70px;
+    top: 10px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+    background: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+/*div com o quadrado com o resultado da pesquisa e ao lado o texto "Nome:"*/
+
+/*div com o quadrado com o resultado da pesquisa e ao lado o texto "Sobrenome:"*/
+ #resultsquare-sobrenome {
+    width: 300px;
+    height: 50px;
+    top: 10px;
+    left: 520px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 30px;
+ }
+
+
+ #resultsquare-sobrenome [class="text-sobrenome"] {
+    position: absolute;
+    left: -120px;
+    top: -6px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    background: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*div com o quadrado com o resultado da pesquisa e ao lado o texto "Sobrenome:"*/
+
+/*div com o quadrado com o resultado da pesquisa e ao lado o texto "Email:"*/
+#resultsquare-email {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    top: -40px;
+    left: 920px;
+    background-color: #ffffff;
+    border-radius: 30px;
+ }
+
+
+ #resultsquare-email [class="text-email"] {
+    position: relative;
+    left: -75px;
+    top: 0px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    position: absolute;
+    font-weight: 600;
+    font-size: 20px;
+    background: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*div com o quadrado com o resultado da pesquisa e ao lado o texto "Email:"*/
+
+/*div com o quadrado com o resultado da pesquisa e ao lado o texto "CPF:"*/
+#resultsquare-cpf {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    top: -90px;
+    left: 1320px;
+    background-color: #ffffff;
+    border-radius: 30px;
+ }
+
+
+ #resultsquare-cpf [class="text-cpf"] {
+    position: relative;
+    left: -65px;
+    top: 0px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    position: absolute;
+    font-weight: 600;
+    font-size: 20px;
+    background: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*div com o quadrado com o resultado da pesquisa e ao lado o texto "CPF:"*/
+
+/*div com o quadrado com o resultado da pesquisa e ao lado o texto "RG:"*/
+#resultsquare-rg {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    top: -60px;
+    left: 60px;
+    background-color: #ffffff;
+    border-radius: 30px;
+ }
+
+
+ #resultsquare-rg [class="text-rg"] {
+    position: relative;
+    left: -45px;
+    top: 0px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    position: absolute;
+    font-weight: 600;
+    font-size: 20px;
+    background: #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*div com o quadrado com o resultado da pesquisa e ao lado o texto "RG:"*/
+ #chart {
+    position: relative;
+    top: -500px;
+    width: 600px;
+    height: 600px;
+ }
