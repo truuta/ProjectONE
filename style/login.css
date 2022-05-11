@@ -26,6 +26,8 @@ body {
     width: 100%;
     padding: 3% 4%;
     max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes animateBg {
@@ -56,17 +58,28 @@ h1 {
     margin-inline-end: 0px;
 }
 
+.container_login {
+    position: relative;
+    top: 5%;
+    left: 0%;
+    max-width: 600px;
+    text-align: center;
+}
+
 .cabecalho {
     align-items: center;
     height: 25%;
     width: 80%;
-    background-color: hsla(0, 0%, 38%, 0.26);
+    background-color: rgb(255, 255, 255);
     position: relative;
-    left: 20%;
-    top: 10%;
+    left: 0%;
+    top: 5%;
     max-width: 600px;
+    max-height: 200px;
     border-radius: 20px;
     border-style: none;
+    margin-left: auto;
+    margin-right: auto;
     border-color: rgba(0, 0, 0, 0.801) box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -79,6 +92,8 @@ h1 {
     display: flex;
     left: 7%;
     top: 5%;
+    -webkit-box-shadow: 0px 0px 13px -6px #000000;
+    box-shadow: 0px 0px 13px -6px #000000;
 }
 
 .email[placeholder="Digite seu E-mail"] {
@@ -95,6 +110,8 @@ h1 {
     display: flex;
     left: 7%;
     top: 30%;
+    -webkit-box-shadow: 0px 0px 13px -6px #000000;
+    box-shadow: 0px 0px 13px -6px #000000;
 }
 
 .senha[placeholder="Digite sua Senha"] {
@@ -110,8 +127,10 @@ h1 {
     left: 6%;
     border-radius: 20px;
     border-style: none;
-    font-style: italic;
-    font-weight: 800;
+    font-style: normal;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 0px 18px -7px #000000;
+    box-shadow: 0px 0px 18px -7px #000000;
 }
 
 .registerbutton {
@@ -122,6 +141,8 @@ h1 {
     left: 60%;
     border-radius: 20px;
     border-style: none;
-    font-style: italic;
-    font-weight: 800;
+    font-style: normal;
+    font-weight: 700;
+    -webkit-box-shadow: 0px 0px 18px -7px #000000;
+    box-shadow: 0px 0px 18px -7px #000000;
 }
