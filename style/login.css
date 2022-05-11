@@ -14,6 +14,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+html {
+    display: block;
+}
+
 body {
     /*animation: animateBg 14s linear infinite;
     background-image: linear-gradient(90deg,rgb(0, 0, 0),rgb(0, 33, 41),rgb(0, 13, 56),rgb(0, 24, 36),rgb(0, 0, 0));
@@ -21,6 +25,7 @@ body {
     background-color: black;
     width: 100%;
     padding: 3% 4%;
+    max-width: 980px;
 }
 
 @keyframes animateBg {
@@ -45,12 +50,16 @@ h1 {
     left: 20%;
     top: 10%;
     display: flex;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 .cabecalho {
     align-items: center;
     height: 25%;
-    width: 30%;
+    width: 50%;
     background-color: hsla(0, 0%, 38%, 0.26);
     position: relative;
     left: 20%;
