@@ -59,11 +59,12 @@ h1 {
 .cabecalho {
     align-items: center;
     height: 25%;
-    width: 50%;
+    width: 80%;
     background-color: hsla(0, 0%, 38%, 0.26);
     position: relative;
     left: 20%;
     top: 10%;
+    max-width: 600px;
     border-radius: 20px;
     border-style: none;
     border-color: rgba(0, 0, 0, 0.801) box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
