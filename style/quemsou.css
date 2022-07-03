@@ -1,421 +1,470 @@
-@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Kreon:wght@300;400;500;600;700&display=swap');
-body {
-    background: #333333;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    font-family: Koulen;
-}
-
-.align-style {
-    position: relative;
-    width: 100vw;
-    height: 10vh;
-    min-height: 45px;
-    max-height: 89px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.style-evandro {
-    position: relative;
-    width: 90rem;
-    height: 9.6vh;
-    min-width: 245px;
-    max-width: 1000px;
-    min-height: 45px;
-    max-height: 100px;
-    background: #1973E5;
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-    border-radius: 0px 0px 25px 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: nowrap;
-}
-
-.style-evandro h1 {
-    position: absolute;
-    width: 28.5vw;
-    height: 90%;
-    min-height: 40px;
-    font-family: 'Koulen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 8vh;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-sobre {
-    position: relative;
-    background: #a8a8a800;
-    width: 100vw;
-    height: 20vh;
-    margin-top: 30px;
-    border-radius: 25px;
-    align-self: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.container-sobre h2 {
-    /* SOBRE */
-    position: relative;
-    width: 100vw;
-    height: 6.6vh;
-    font-family: 'Koulen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 60px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 40px;
-    margin-bottom: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-pargraph {
-    position: relative;
-    background: #a8a8a800;
-    width: 100vw;
-    max-width: 1000px;
-    min-width: 650px;
-    height: 22vh;
-    margin-top: 20px;
-    border-radius: 25px;
-    align-self: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.container-sobre p {
-    /* Olá, meu nome é Evandro Fonseca Junior, sou um apaixonado por tecnologia e pretendo cursar Engenharia da Computação atualmente estou estudando programação visando a inovação local, proporcionando oportunidades repassando o conhecimento adquirido a outras pessoas! */
-    position: relative;
-    font-family: 'Kreon';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 30px;
-    align-items: center;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.content-align {
-    position: relative;
-    width: 100vw;
-    height: 40vh;
-    top: 2vh;
-    margin-top: 20px;
-    background: #ffffff00;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-.style-tech {
-    /* style-tech */
-    position: absolute;
-    width: 780px;
-    height: 15.6rem;
-    background: #1973E5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.evandro {
-    /* dev-image */
-    box-sizing: border-box;
-    position: absolute;
-    width: 230px;
-    height: 330px;
-    top: -35px;
-    background: url(20220515_161831.jpg);
-    mix-blend-mode: normal;
-    border: 0px solid #ffffff;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 25px;
-}
-
-.group-technologies {
-    position: relative;
-    width: 70%;
-    height: 100%;
-    margin-left: 30%;
-    justify-content: center;
-    align-items: center;
-}
-
-.text-technologies {
-    position: relative;
-    width: 60%;
-    height: 120px;
-    float: right;
-    right: 100px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    margin-top: 0px;
-    display: flex;
-    bottom: 40px;
-}
-
-.technologies {
-    /* TECNOLOGIAS */
-    font-family: 'Koulen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    display: flex;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-}
-
-.images-technologies {
-    position: relative;
-    width: 99%;
-    height: 35%;
-    margin: 0px;
-    justify-content: center;
-    align-content: center;
-    align-items: flex-start;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.image-align {
-    position: relative;
-    width: 100%;
-    height: 80px;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    display: flex;
-    bottom: 55px;
-}
-
-.images-technologies img {
-    position: relative;
-    width: 70px;
-    height: 70px;
-    margin: 5px;
-}
-
-.github-projects {
-    position: relative;
-    width: 500px;
-    height: 40px;
-    display: flex;
-    top: 250px;
-    right: 525px;
-    justify-content: center;
-    align-self: center;
-    align-content: center;
-    align-items: center;
-    border-radius: 0px 0px 25px 25px;
-}
-
-.form {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 0px 0px 25px 25px;
-    border: 0px solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    background: #333333;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.projects {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 0px 0px 25px 25px;
-    border: 0px solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    background: #333333;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.projects:hover {
-    background: #002c66;
-    transition: all 1s ease;
-    cursor: pointer;
-}
-
-.projects:hover::before {
-    background: #333333;
-    transition: background 1s ease;
-    cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.h3-portifolio {
-    position: relative;
-    width: 120px;
-    height: 40px;
-    font-family: Koulen;
-    font-size: 30px;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-self: center;
-    display: flex;
-    margin: 0px;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    color: white;
-    align-items: center;
-    font-weight: 400;
-}
-
-.icon-github {
-    position: relative;
-    width: 32px;
-}
-
-.content-align-dev_text {
-    position: relative;
-    width: 100vw;
-    height: 20vh;
-    top: 2vh;
-    margin-top: 5px;
-    background: #ffffff00;
-    display: grid;
-    align-content: center;
-    align-items: start;
-    justify-items: center;
-    justify-content: center;
-}
-
-.model-developer {
-    /* style-dev */
-    position: relative;
-    width: 400px;
-    height: 70px;
-    background: #1973E5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 5px 25px;
-    margin-right: 380px;
-    display: flex;
-    top: 16px;
-}
-
-.developer {
-    position: relative;
-    width: 100%;
-    height: 70px;
-    font-family: 'Koulen';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 60px;
-    display: flex;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-    margin: 0px;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-}
-
-.model-text {
-    /* “Saber não é o bastante, devemos aplicar. Disposição não é o suficiente, devemos fazer.” */
-    position: relative;
-    width: 55%;
-    height: 8rem;
-    font-family: 'Kreon';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    display: grid;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 0px;
-}
-
-.download {
-    position: relative;
-    width: 120px;
-    height: 50px;
-    top: 15px;
-    right: 4px;
-    border-radius: 0px 15px 15px 0px;
-    border: 0px solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    flex-direction: row;
-    background: #333333;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin: 0px;
-}
-
-.download h2 {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    font-size: 1.5rem;
-    font-family: Koulen;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    margin: 0px;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    color: #FFFFFF;
-    font-weight: 400;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+                @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Kreon:wght@300;400;500;600;700&display=swap');
+                    body {
+                        margin: 0;
+                        font-family: var(--bs-font-sans-serif);
+                        font-size: 1rem;
+                        font-weight: 400;
+                        line-height: 1.5;
+                        color: #212529;
+                        background-color: rgb(31, 31, 31);
+                        -webkit-text-size-adjust: 100%;
+                        -webkit-tap-highlight-color: transparent;
+                    }
+                    
+                    .align-style {
+                        position: relative;
+                        width: 100vw;
+                        height: 10vh;
+                        min-height: 45px;
+                        max-height: 89px;
+                        display: flex;
+                        align-content: center;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                    .style-evandro {
+                        position: relative;
+                        width: 90rem;
+                        height: 9.6vh;
+                        min-width: 245px;
+                        max-width: 1000px;
+                        min-height: 45px;
+                        max-height: 100px;
+                        background: #1973E5;
+                        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+                        border-radius: 0px 0px 25px 25px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        align-content: center;
+                        flex-wrap: nowrap;
+                    }
+                    
+                    .style-evandro h1 {
+                        position: absolute;
+                        width: 28.5vw;
+                        height: 90%;
+                        min-height: 40px;
+                        font-family: 'Koulen';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 8vh;
+                        align-items: center;
+                        text-align: center;
+                        color: #FFFFFF;
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                    .container-sobre {
+                        position: relative;
+                        background: #a8a8a800;
+                        width: 100vw;
+                        height: 210px;
+                        margin-top: 5px;
+                        border-radius: 25px;
+                        align-self: center;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+                    
+                    .container-sobre h2 {
+                        /* SOBRE */
+                        position: relative;
+                        width: 100vw;
+                        height: 80px;
+                        font-family: 'Koulen';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 60px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                    .container-pargraph {
+                        position: relative;
+                        background: #a8a8a800;
+                        width: 100vw;
+                        max-width: 1000px;
+                        min-width: 650px;
+                        height: 120px;
+                        margin-top: 5px;
+                        border-radius: 25px;
+                        align-self: center;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+                    
+                    .container-sobre p {
+                        /* Olá, meu nome é Evandro Fonseca Junior, sou um apaixonado por tecnologia e pretendo cursar Engenharia da Computação atualmente estou estudando programação visando a inovação local, proporcionando oportunidades repassando o conhecimento adquirido a outras pessoas! */
+                        position: relative;
+                        font-family: 'Kreon';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 2rem;
+                        line-height: 30px;
+                        align-items: center;
+                        text-align: center;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        color: #FFFFFF;
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    
+                    .content-align {
+                        position: relative;
+                        width: 100vw;
+                        height: 335px;
+                        top: 2vh;
+                        margin-top: 0px;
+                        background: #ffffff00;
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                    }
+                    
+                    .style-tech {
+                        /* style-tech */
+                        position: absolute;
+                        width: 780px;
+                        height: 15.6rem;
+                        background: #1973E5;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 25px;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+                    }
+                    
+                    .evandro {
+                        /* dev-image */
+                        box-sizing: border-box;
+                        position: absolute;
+                        width: 230px;
+                        height: 330px;
+                        top: -40px;
+                        background: url(20220515_161831.jpg);
+                        mix-blend-mode: normal;
+                        border: 0px solid #ffffff;
+                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+                        border-radius: 25px;
+                    }
+                    
+                    .linkedin {
+                        position: relative;
+                        width: 120px;
+                        height: 50px;
+                        top: 15px;
+                        right: 4px;
+                        border-radius: 0px 15px 15px 0px;
+                        border: 0px solid;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        align-content: center;
+                        flex-direction: row;
+                        background: #333333;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        margin: 0px;
+                    }
+                    
+                    .linkedin h2 {
+                        position: relative;
+                        width: 100%;
+                        height: 50%;
+                        font-size: 1.5rem;
+                        font-family: Koulen;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        margin: 0px;
+                        justify-content: center;
+                        align-content: center;
+                        flex-wrap: nowrap;
+                        color: #FFFFFF;
+                        font-weight: 400;
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    }
+                    
+                    .group-technologies {
+                        position: relative;
+                        width: 70%;
+                        height: 100%;
+                        margin-left: 30%;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    .container-tecnologias {
+                        position: relative;
+                        width: 60%;
+                        height: 120px;
+                        float: right;
+                        right: 100px;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                        text-align: center;
+                        margin-top: 0px;
+                        display: flex;
+                        bottom: 40px;
+                    }
+                    
+                    .texto-tecnologias {
+                        /* TECNOLOGIAS */
+                        font-family: 'Koulen';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 40px;
+                        display: flex;
+                        margin-top: 0px;
+                        margin-bottom: 10px;
+                        color: #FFFFFF;
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        justify-content: center;
+                        align-content: center;
+                        flex-direction: column;
+                    }
+                    
+                    .images-technologies {
+                        position: relative;
+                        width: 99%;
+                        height: 35%;
+                        margin: 0px;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: flex-start;
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    
+                    .image-align {
+                        position: relative;
+                        width: 100%;
+                        height: 80px;
+                        justify-content: center;
+                        align-items: center;
+                        align-content: center;
+                        display: flex;
+                        bottom: 55px;
+                    }
+                    
+                    .images-technologies img {
+                        position: relative;
+                        width: 70px;
+                        height: 70px;
+                        margin: 5px;
+                    }
+                    
+                    .github-projects {
+                        position: relative;
+                        width: 500px;
+                        height: 40px;
+                        display: flex;
+                        top: 250px;
+                        right: 525px;
+                        justify-content: center;
+                        align-self: center;
+                        align-content: center;
+                        align-items: center;
+                        border-radius: 0px 0px 25px 25px;
+                    }
+                    
+                    .form {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 0px 0px 25px 25px;
+                        border: 0px solid;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        align-content: center;
+                        flex-wrap: nowrap;
+                        flex-direction: row;
+                        background: #333333;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    }
+                    
+                    .projects {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 0px 0px 25px 25px;
+                        border: 0px solid;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        align-content: center;
+                        flex-wrap: nowrap;
+                        flex-direction: row;
+                        background: #333333;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    }
+                    
+                    .projects:hover {
+                        background: #002c66;
+                        transition: all 1s ease;
+                        cursor: pointer;
+                    }
+                    
+                    .projects:hover::before {
+                        background: #333333;
+                        transition: background 1s ease;
+                        cursor: pointer;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    }
+                    
+                    .h3-portifolio {
+                        position: relative;
+                        width: 120px;
+                        height: 40px;
+                        font-family: Koulen;
+                        font-size: 30px;
+                        text-align: center;
+                        justify-content: center;
+                        align-content: center;
+                        align-self: center;
+                        display: flex;
+                        margin: 0px;
+                        flex-wrap: nowrap;
+                        flex-direction: row;
+                        color: white;
+                        align-items: center;
+                        font-weight: 400;
+                    }
+                    
+                    .icon-github {
+                        position: relative;
+                        width: 32px;
+                    }
+                    
+                    .content-align-dev_text {
+                        position: relative;
+                        width: 100vw;
+                        height: 200px;
+                        top: 2vh;
+                        margin-top: 0px;
+                        background: #ffffff00;
+                        display: flex;
+                        align-content: center;
+                        align-items: center;
+                        justify-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                    }
+                    
+                    .model-developer {
+                        /* style-dev */
+                        position: relative;
+                        width: 400px;
+                        height: 70px;
+                        background: #1973E5;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 5px 25px;
+                        margin-right: 380px;
+                        display: flex;
+                        margin-top: 20px;
+                    }
+                    
+                    .developer {
+                        position: relative;
+                        width: 100%;
+                        height: 70px;
+                        font-family: 'Koulen';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 60px;
+                        display: flex;
+                        color: #FFFFFF;
+                        text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+                        margin: 0px;
+                        align-items: center;
+                        justify-items: center;
+                        justify-content: center;
+                        align-content: center;
+                    }
+                    
+                    .model-text {
+                        /* “Saber não é o bastante, devemos aplicar. Disposição não é o suficiente, devemos fazer.” */
+                        position: relative;
+                        width: 40%;
+                        height: 200px;
+                        font-family: 'Kreon';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 30px;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        color: #FFFFFF;
+                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        margin-top: 0px;
+                    }
+                    
+                    .model-text p {
+                        line-height: 1;
+                    }
+                    /* Set the background color of body to tan */
+                    /* On screens that are 992px or less, set the background color to blue */
+                    
+                    //@media screen and (max-width: 1366px) {
+                    body {
+                        background-color: blue;
+                    }
+                    
+                    .container-sobre {
+                        margin-top: 10px;
+                        height: 175px;
+                    }
+                    
+                    .container-sobre h2 {
+                        margin-top: 0px;
+                    }
+                    
+                    .container-pargraph {
+                        height: 120px;
+                        margin-top: 5px;
+                    }
+                    
+                    .content-align {
+                        margin-top: 0px;
+                        height: 335px;
+                    }
+                    
+                    .content-align-dev_text {
+                        margin-top: 0px;
+                    }
+                    
+                    .content-align-dev_text p {
+                        line-height: 1;
+                    }
+                }
+                /* On screens that are 600px or less, set the background color to olive */
+                @media screen and (max-width: 836px) {
+                    .content-align-dev_text {
+                        top: 70px;
+                    }
+                }
