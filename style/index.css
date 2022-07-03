@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Kreon:wght@300;400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "KOULEN", sans-serif;
 }
 
 body {
@@ -12,6 +12,7 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
+    background-color: #212529;
 }
 
 ul {
@@ -26,72 +27,19 @@ ul li {
 ul li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 3em;
-    padding: 5px 20px;
+    font-size: 4em;
+    padding: 1px 20px;
     display: inline-flex;
-    font-weight: 700;
+    font-weight: 800;
     transition: 0.5s;
 }
 
 ul:hover li a {
-    color: #0002;
+    color: rgb(0, 0, 0);
 }
 
 ul li:hover a {
-    color: #000;
-    background: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background: rgb(44, 44, 44);
     border-radius: 30px;
-}
-
-ul li a:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5em;
-    color: rgba(0, 0, 0, 0.253);
-    border-radius: 200px;
-    z-index: -1;
-    opacity: 0;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 50px;
-    transition: letter-spacing 0.5s, left 0.5s;
-}
-
-ul li a:hover:before {
-    content: attr(data-text);
-    opacity: 1;
-    left: 50%;
-    letter-spacing: 10px;
-    width: 1800px;
-    height: 930px;
-}
-
-ul li:nth-child(6n+1) a:before {
-    background: #00BCF0;
-}
-
-ul li:nth-child(6n+2) a:before {
-    background: #7786F0;
-}
-
-ul li:nth-child(6n+3) a:before {
-    background: #80F06E;
-}
-
-ul li:nth-child(6n+4) a:before {
-    background: #F0A156;
-}
-
-ul li:nth-child(6n+5) a:before {
-    background: #F0D062;
-}
-
-ul li:nth-child(6n+6) a:before {
-    background: #F06266;
 }
