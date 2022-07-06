@@ -1,470 +1,487 @@
-                @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Kreon:wght@300;400;500;600;700&display=swap');
-                    body {
-                        margin: 0;
-                        font-family: var(--bs-font-sans-serif);
-                        font-size: 1rem;
-                        font-weight: 400;
-                        line-height: 1.5;
-                        color: #212529;
-                        background-color: rgb(31, 31, 31);
-                        -webkit-text-size-adjust: 100%;
-                        -webkit-tap-highlight-color: transparent;
-                    }
-                    
-                    .align-style {
-                        position: relative;
-                        width: 100vw;
-                        height: 10vh;
-                        min-height: 45px;
-                        max-height: 89px;
-                        display: flex;
-                        align-content: center;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    
-                    .style-evandro {
-                        position: relative;
-                        width: 90rem;
-                        height: 9.6vh;
-                        min-width: 245px;
-                        max-width: 1000px;
-                        min-height: 45px;
-                        max-height: 100px;
-                        background: #1973E5;
-                        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-                        border-radius: 0px 0px 25px 25px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        align-content: center;
-                        flex-wrap: nowrap;
-                    }
-                    
-                    .style-evandro h1 {
-                        position: absolute;
-                        width: 28.5vw;
-                        height: 90%;
-                        min-height: 40px;
-                        font-family: 'Koulen';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 8vh;
-                        align-items: center;
-                        text-align: center;
-                        color: #FFFFFF;
-                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                        margin: 0;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    
-                    .container-sobre {
-                        position: relative;
-                        background: #a8a8a800;
-                        width: 100vw;
-                        height: 210px;
-                        margin-top: 5px;
-                        border-radius: 25px;
-                        align-self: center;
-                        text-align: center;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                    }
-                    
-                    .container-sobre h2 {
-                        /* SOBRE */
-                        position: relative;
-                        width: 100vw;
-                        height: 80px;
-                        font-family: 'Koulen';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 60px;
-                        text-align: center;
-                        color: #FFFFFF;
-                        text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-                        margin-top: 0px;
-                        margin-bottom: 0px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    
-                    .container-pargraph {
-                        position: relative;
-                        background: #a8a8a800;
-                        width: 100vw;
-                        max-width: 1000px;
-                        min-width: 650px;
-                        height: 120px;
-                        margin-top: 5px;
-                        border-radius: 25px;
-                        align-self: center;
-                        text-align: center;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                    }
-                    
-                    .container-sobre p {
-                        /* Olá, meu nome é Evandro Fonseca Junior, sou um apaixonado por tecnologia e pretendo cursar Engenharia da Computação atualmente estou estudando programação visando a inovação local, proporcionando oportunidades repassando o conhecimento adquirido a outras pessoas! */
-                        position: relative;
-                        font-family: 'Kreon';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 2rem;
-                        line-height: 30px;
-                        align-items: center;
-                        text-align: center;
-                        margin-top: 0px;
-                        margin-bottom: 0px;
-                        color: #FFFFFF;
-                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    
-                    .content-align {
-                        position: relative;
-                        width: 100vw;
-                        height: 335px;
-                        top: 2vh;
-                        margin-top: 0px;
-                        background: #ffffff00;
-                        display: flex;
-                        justify-content: center;
-                        align-content: center;
-                        flex-wrap: nowrap;
-                        align-items: center;
-                    }
-                    
-                    .style-tech {
-                        /* style-tech */
-                        position: absolute;
-                        width: 780px;
-                        height: 15.6rem;
-                        background: #1973E5;
-                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                        border-radius: 25px;
-                        display: flex;
-                        flex-direction: column;
-                        flex-wrap: wrap;
-                    }
-                    
-                    .evandro {
-                        /* dev-image */
-                        box-sizing: border-box;
-                        position: absolute;
-                        width: 230px;
-                        height: 330px;
-                        top: -40px;
-                        background: url(20220515_161831.jpg);
-                        mix-blend-mode: normal;
-                        border: 0px solid #ffffff;
-                        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-                        border-radius: 25px;
-                    }
-                    
-                    .linkedin {
-                        position: relative;
-                        width: 120px;
-                        height: 50px;
-                        top: 15px;
-                        right: 4px;
-                        border-radius: 0px 15px 15px 0px;
-                        border: 0px solid;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        align-content: center;
-                        flex-direction: row;
-                        background: #333333;
-                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                        margin: 0px;
-                    }
-                    
-                    .linkedin h2 {
-                        position: relative;
-                        width: 100%;
-                        height: 50%;
-                        font-size: 1.5rem;
-                        font-family: Koulen;
-                        text-align: center;
-                        display: flex;
-                        align-items: center;
-                        margin: 0px;
-                        justify-content: center;
-                        align-content: center;
-                        flex-wrap: nowrap;
-                        color: #FFFFFF;
-                        font-weight: 400;
-                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                    }
-                    
-                    .group-technologies {
-                        position: relative;
-                        width: 70%;
-                        height: 100%;
-                        margin-left: 30%;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    
-                    .container-tecnologias {
-                        position: relative;
-                        width: 60%;
-                        height: 120px;
-                        float: right;
-                        right: 100px;
-                        justify-content: center;
-                        align-items: center;
-                        align-content: center;
-                        text-align: center;
-                        margin-top: 0px;
-                        display: flex;
-                        bottom: 40px;
-                    }
-                    
-                    .texto-tecnologias {
-                        /* TECNOLOGIAS */
-                        font-family: 'Koulen';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 40px;
-                        display: flex;
-                        margin-top: 0px;
-                        margin-bottom: 10px;
-                        color: #FFFFFF;
-                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                        justify-content: center;
-                        align-content: center;
-                        flex-direction: column;
-                    }
-                    
-                    .images-technologies {
-                        position: relative;
-                        width: 99%;
-                        height: 35%;
-                        margin: 0px;
-                        justify-content: center;
-                        align-content: center;
-                        align-items: flex-start;
-                        display: flex;
-                        flex-wrap: wrap;
-                    }
-                    
-                    .image-align {
-                        position: relative;
-                        width: 100%;
-                        height: 80px;
-                        justify-content: center;
-                        align-items: center;
-                        align-content: center;
-                        display: flex;
-                        bottom: 55px;
-                    }
-                    
-                    .images-technologies img {
-                        position: relative;
-                        width: 70px;
-                        height: 70px;
-                        margin: 5px;
-                    }
-                    
-                    .github-projects {
-                        position: relative;
-                        width: 500px;
-                        height: 40px;
-                        display: flex;
-                        top: 250px;
-                        right: 525px;
-                        justify-content: center;
-                        align-self: center;
-                        align-content: center;
-                        align-items: center;
-                        border-radius: 0px 0px 25px 25px;
-                    }
-                    
-                    .form {
-                        position: relative;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 0px 0px 25px 25px;
-                        border: 0px solid;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        align-content: center;
-                        flex-wrap: nowrap;
-                        flex-direction: row;
-                        background: #333333;
-                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                    }
-                    
-                    .projects {
-                        position: relative;
-                        width: 100%;
-                        height: 100%;
-                        border-radius: 0px 0px 25px 25px;
-                        border: 0px solid;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        align-content: center;
-                        flex-wrap: nowrap;
-                        flex-direction: row;
-                        background: #333333;
-                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                    }
-                    
-                    .projects:hover {
-                        background: #002c66;
-                        transition: all 1s ease;
-                        cursor: pointer;
-                    }
-                    
-                    .projects:hover::before {
-                        background: #333333;
-                        transition: background 1s ease;
-                        cursor: pointer;
-                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                    }
-                    
-                    .h3-portifolio {
-                        position: relative;
-                        width: 120px;
-                        height: 40px;
-                        font-family: Koulen;
-                        font-size: 30px;
-                        text-align: center;
-                        justify-content: center;
-                        align-content: center;
-                        align-self: center;
-                        display: flex;
-                        margin: 0px;
-                        flex-wrap: nowrap;
-                        flex-direction: row;
-                        color: white;
-                        align-items: center;
-                        font-weight: 400;
-                    }
-                    
-                    .icon-github {
-                        position: relative;
-                        width: 32px;
-                    }
-                    
-                    .content-align-dev_text {
-                        position: relative;
-                        width: 100vw;
-                        height: 200px;
-                        top: 2vh;
-                        margin-top: 0px;
-                        background: #ffffff00;
-                        display: flex;
-                        align-content: center;
-                        align-items: center;
-                        justify-items: center;
-                        justify-content: center;
-                        flex-direction: column;
-                        flex-wrap: nowrap;
-                    }
-                    
-                    .model-developer {
-                        /* style-dev */
-                        position: relative;
-                        width: 400px;
-                        height: 70px;
-                        background: #1973E5;
-                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                        border-radius: 5px 25px;
-                        margin-right: 380px;
-                        display: flex;
-                        margin-top: 20px;
-                    }
-                    
-                    .developer {
-                        position: relative;
-                        width: 100%;
-                        height: 70px;
-                        font-family: 'Koulen';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 60px;
-                        display: flex;
-                        color: #FFFFFF;
-                        text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-                        margin: 0px;
-                        align-items: center;
-                        justify-items: center;
-                        justify-content: center;
-                        align-content: center;
-                    }
-                    
-                    .model-text {
-                        /* “Saber não é o bastante, devemos aplicar. Disposição não é o suficiente, devemos fazer.” */
-                        position: relative;
-                        width: 40%;
-                        height: 200px;
-                        font-family: 'Kreon';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 30px;
-                        display: flex;
-                        align-items: center;
-                        text-align: center;
-                        color: #FFFFFF;
-                        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                        margin-top: 0px;
-                    }
-                    
-                    .model-text p {
-                        line-height: 1;
-                    }
-                    /* Set the background color of body to tan */
-                    /* On screens that are 992px or less, set the background color to blue */
-                    
-                    //@media screen and (max-width: 1366px) {
-                    body {
-                        background-color: blue;
-                    }
-                    
-                    .container-sobre {
-                        margin-top: 10px;
-                        height: 175px;
-                    }
-                    
-                    .container-sobre h2 {
-                        margin-top: 0px;
-                    }
-                    
-                    .container-pargraph {
-                        height: 120px;
-                        margin-top: 5px;
-                    }
-                    
-                    .content-align {
-                        margin-top: 0px;
-                        height: 335px;
-                    }
-                    
-                    .content-align-dev_text {
-                        margin-top: 0px;
-                    }
-                    
-                    .content-align-dev_text p {
-                        line-height: 1;
-                    }
-                }
-                /* On screens that are 600px or less, set the background color to olive */
-                @media screen and (max-width: 836px) {
-                    .content-align-dev_text {
-                        top: 70px;
-                    }
-                }
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Kreon:wght@300;400;500;600;700&display=swap');
+html {
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: Koulen;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: Koulen;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+p {
+    font-size: 1rem;
+    font-family: Kreon;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+
+/*/ Box para alinhamento dos itens no topo da página /*/
+
+.align-style {
+    height: 10vh;
+}
+
+
+/*/ Modelo abaixo do nome no topo da pág /*/
+
+.style-evandro {
+    width: 60vw;
+    height: 10vh;
+    border: 0px solid;
+    border-radius: 0px 0px 25px 25px;
+    background: #1973E5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/*/ Container do h2 "SOBRE" /*/
+
+.container-sobre {
+    width: 100vw;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    background: #3f3f3f;
+}
+
+
+/*/ Container do primeiro parágrafo /*/
+
+.container-pargraph {
+    margin-bottom: 20px;
+}
+
+
+/*/ Primeiro parágrafo /*/
+
+.container-pargraph p {
+    width: 60vw;
+    position: relative;
+    font-family: 'Kreon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 1vw;
+}
+
+.content-align {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+/*/ Foto Evandro /*/
+
+.style-tech img {
+    width: 20vw;
+    left: 10vw;
+    border: 0px solid;
+    display: flex;
+}
+
+.container-devimg {
+    display: flex;
+}
+
+.evandro {
+    min-width: 205px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.model-developer {
+    position: relative;
+    width: 20vw;
+    min-width: 205px;
+    background: #1973E5;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.style-tech {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+.style02 {
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+    min-height: 205px;
+    min-width: 360px;
+    border: 0px solid;
+    background: #1973E5;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.group-technologies {}
+
+.image-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.image-align img {
+    width: 5vw;
+    border-radius: 5px;
+}
+
+.github-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 0px;
+    width: 5vw;
+    height: 30vh;
+    min-height: 225px;
+    min-width: 60px;
+    flex-wrap: nowrap;
+}
+
+.github {
+    width: 5vw;
+    height: 15vh;
+    min-height: 112.5px;
+    min-width: 60px;
+    border: 0px none;
+    border-radius: 0px 20px 0px 0px;
+    background: #3f3f3f;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.github h3 {
+    font-size: 1.6rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Koulen;
+    font-weight: 400;
+    margin: 0px;
+    display: none;
+}
+
+.github img {
+    width: 4.5vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.linkedin {
+    width: 5vw;
+    height: 15vh;
+    min-height: 112.5px;
+    min-width: 60px;
+    border: 0px none;
+    border-radius: 0px 0px 20px 0px;
+    background: #3f3f3f;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.linkedin h3 {
+    font-size: 1.6rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Koulen;
+    font-weight: 400;
+    margin: 0px;
+    display: none;
+}
+
+.linkedin img {
+    width: 4vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.content-align-dev_text {}
+
+.content-align-dev_text p {
+    width: 90vw;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        width: 100vw;
+        height: 100vh;
+        background-color: #333333;
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        margin: 0px;
+    }
+    h1 {
+        font-size: 4rem;
+        font-family: Koulen;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin: 0px;
+        padding: 0px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    h2 {
+        font-size: 2rem;
+        font-family: Koulen;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin: 0px;
+        padding: 0px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    p {
+        font-size: 1rem;
+        font-family: Kreon;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin: 0px;
+        padding: 0px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    div {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    /*/ Box para alinhamento dos itens no topo da página /*/
+    .align-style {
+        height: 10vh;
+        top: -10px;
+    }
+    /*/ Modelo abaixo do nome no topo da pág /*/
+    .style-evandro {
+        width: 90vw;
+        height: 10vh;
+        border: 0px solid;
+        border-radius: 0px 0px 25px 25px;
+        background: #1973E5;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    /*/ Container do h2 "SOBRE" /*/
+    .container-sobre {
+        width: 100vw;
+        margin-bottom: 1vh;
+        background: #3f3f3f;
+    }
+    /*/ Container do primeiro parágrafo /*/
+    .container-pargraph {
+        margin-bottom: 20px;
+    }
+    /*/ Primeiro parágrafo /*/
+    .container-pargraph p {
+        position: relative;
+        font-family: 'Kreon';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 19px;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 1vw;
+    }
+    /*/ Foto Evandro /*/
+    .style-tech img {
+        width: 60vw;
+        border: 0px solid;
+    }
+    .style-tech {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .container-devimg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .evandro {
+        border-radius: 20px 20px 0px 0px;
+        margin-bottom: 0px;
+    }
+    .model-developer {
+        width: 60vw;
+        background: #3f3f3f;
+        border-radius: 0px 0px 20px 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .style02 {
+        position: relative;
+        width: 95vw;
+        height: 50vh;
+        border: 0px solid;
+        background: #1973E5;
+        border-radius: 20px 20px 0px 0px;
+        top: -30vh;
+        z-index: -1;
+        min-height: 400px;
+        max-height: 550px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .group-technologies {
+        top: 30%;
+    }
+    .image-align {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    .image-align img {
+        width: 15vw;
+        border-radius: 5px;
+    }
+    .github-projects {
+        top: -30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        flex-direction: row;
+        padding: 0px;
+    }
+    .github {
+        width: 47.5vw;
+        height: 5vh;
+        border: 0px none;
+        border-radius: 0px 0px 0px 20px;
+        background: #3f3f3f;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .github h3 {
+        font-size: 1.6rem;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Koulen;
+        font-weight: 400;
+    }
+    .github img {
+        width: 4vh;
+        padding: 0px;
+        margin: 0px;
+    }
+    .linkedin {
+        width: 47.5vw;
+        height: 5vh;
+        border: 0px none;
+        border-radius: 0px 0px 20px 0px;
+        background: #3f3f3f;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .linkedin h3 {
+        font-size: 1.6rem;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin-right: 1%;
+        font-family: Koulen;
+        font-weight: 400;
+    }
+    .linkedin img {
+        width: 4vh;
+        padding: 0px;
+        margin: 0px;
+    }
+    .content-align-dev_text {
+        top: -30vh;
+    }
+    .content-align-dev_text p {
+        width: 90vw;
+        text-align: center;
+    }
+}
