@@ -414,13 +414,18 @@ div {
         border-radius: 5px;
     }
     .github-projects {
-        top: -30vh;
         display: flex;
+        bottom: 31vh;
         align-items: center;
         justify-content: center;
         align-content: center;
         flex-direction: row;
         padding: 0px;
+        width: 5vw;
+        height: 12vh;
+        min-height: 1px;
+        min-width: 60px;
+        flex-wrap: nowrap;
     }
     .github {
         width: 47.5vw;
