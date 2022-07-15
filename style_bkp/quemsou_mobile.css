@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Kreon:wght@300;400;500;600;700&display=swap');
+html {
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: Koulen;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: Koulen;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+p {
+    font-size: 1rem;
+    font-family: Kreon;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+
+/*/ Box para alinhamento dos itens no topo da página /*/
+
+.align-style {
+    height: 10vh;
+    top: -10px;
+}
+
+
+/*/ Modelo abaixo do nome no topo da pág /*/
+
+.style-evandro {
+    width: 90vw;
+    height: 10vh;
+    border: 0px solid;
+    border-radius: 0px 0px 25px 25px;
+    background: #1973E5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/*/ Container do h2 "SOBRE" /*/
+
+.container-sobre {
+    width: 100vw;
+    margin-bottom: 1vh;
+    background: #3f3f3f;
+}
+
+
+/*/ Container do primeiro parágrafo /*/
+
+.container-pargraph {
+    margin-bottom: 20px;
+}
+
+
+/*/ Primeiro parágrafo /*/
+
+.container-pargraph p {
+    position: relative;
+    font-family: 'Kreon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 1vw;
+}
+
+
+/*/ Foto Evandro /*/
+
+.style-tech img {
+    width: 60vw;
+    border: 0px solid;
+}
+
+.style-tech {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.container-devimg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.evandro {
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 0px;
+}
+
+.model-developer {
+    width: 60vw;
+    background: #3f3f3f;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.style02 {
+    position: relative;
+    width: 95vw;
+    height: 50vh;
+    border: 0px solid;
+    background: #1973E5;
+    border-radius: 20px 20px 0px 0px;
+    top: -30vh;
+    z-index: -1;
+    min-height: 400px;
+    max-height: 550px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.group-technologies {
+    top: 30%;
+}
+
+.image-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.image-align img {
+    width: 15vw;
+    border-radius: 5px;
+}
+
+.github-projects {
+    top: -30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    padding: 0px;
+}
+
+.github {
+    width: 47.5vw;
+    height: 5vh;
+    border: 0px none;
+    border-radius: 0px 0px 0px 20px;
+    background: #3f3f3f;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.github h3 {
+    font-size: 1.6rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Koulen;
+    font-weight: 400;
+}
+
+.github img {
+    width: 4vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.linkedin {
+    width: 47.5vw;
+    height: 5vh;
+    border: 0px none;
+    border-radius: 0px 0px 20px 0px;
+    background: #3f3f3f;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.linkedin h3 {
+    font-size: 1.6rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 1%;
+    font-family: Koulen;
+    font-weight: 400;
+}
+
+.linkedin img {
+    width: 4vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.content-align-dev_text {
+    top: -30vh;
+}
+
+.content-align-dev_text p {
+    width: 90vw;
+    text-align: center;
+}

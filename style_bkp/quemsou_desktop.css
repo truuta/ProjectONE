@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Kreon:wght@300;400;500;600;700&display=swap');
+html {
+    width: 100vw;
+    height: 100vh;
+    background-color: #333333;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-family: Koulen;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: Koulen;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+p {
+    font-size: 1rem;
+    font-family: Kreon;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+
+/*/ Box para alinhamento dos itens no topo da página /*/
+
+.align-style {
+    height: 10vh;
+}
+
+
+/*/ Modelo abaixo do nome no topo da pág /*/
+
+.style-evandro {
+    width: 60vw;
+    height: 10vh;
+    border: 0px solid;
+    border-radius: 0px 0px 25px 25px;
+    background: #1973E5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/*/ Container do h2 "SOBRE" /*/
+
+.container-sobre {
+    width: 100vw;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    background: #3f3f3f;
+}
+
+
+/*/ Container do primeiro parágrafo /*/
+
+.container-pargraph {
+    margin-bottom: 20px;
+}
+
+
+/*/ Primeiro parágrafo /*/
+
+.container-pargraph p {
+    width: 60vw;
+    position: relative;
+    font-family: 'Kreon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 1vw;
+}
+
+.content-align {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+
+/*/ Foto Evandro /*/
+
+.style-tech img {
+    width: 20vw;
+    left: 10vw;
+    border: 0px solid;
+    display: flex;
+}
+
+.container-devimg {
+    display: flex;
+}
+
+.evandro {
+    min-width: 205px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.model-developer {
+    position: relative;
+    width: 20vw;
+    min-width: 205px;
+    background: #1973E5;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.style-tech {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+}
+
+.style02 {
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+    min-height: 205px;
+    min-width: 360px;
+    border: 0px solid;
+    background: #1973E5;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.group-technologies {}
+
+.image-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.image-align img {
+    width: 5vw;
+    border-radius: 5px;
+}
+
+.github-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 0px;
+    width: 5vw;
+    height: 30vh;
+    min-height: 225px;
+    min-width: 60px;
+    flex-wrap: nowrap;
+}
+
+.github {
+    width: 5vw;
+    height: 15vh;
+    min-height: 112.5px;
+    min-width: 60px;
+    border: 0px none;
+    border-radius: 0px 20px 0px 0px;
+    background: #3f3f3f;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.github h3 {
+    font-size: 1.6rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Koulen;
+    font-weight: 400;
+    margin: 0px;
+    display: none;
+}
+
+.github img {
+    width: 4.5vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.linkedin {
+    width: 5vw;
+    height: 15vh;
+    min-height: 112.5px;
+    min-width: 60px;
+    border: 0px none;
+    border-radius: 0px 0px 20px 0px;
+    background: #3f3f3f;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.linkedin h3 {
+    font-size: 1.6rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Koulen;
+    font-weight: 400;
+    margin: 0px;
+    display: none;
+}
+
+.linkedin img {
+    width: 4vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.content-align-dev_text {}
+
+.content-align-dev_text p {
+    width: 90vw;
+    text-align: center;
+}
+
+@media screen and (max-width: 836px) {}

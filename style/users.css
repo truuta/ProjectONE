@@ -1,350 +1,387 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Kreon:wght@300;400;500;600;700&display=swap');
 html {
-    background-color: #000000;
+    width: 100vw;
+    height: 100vh;
+    font-family: Koulen;
+    font-weight: 400;
+    background: #333333;
     display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    overflow: visible;
-}
-
-
-/*SCROLLBAR*/
-
-body::-webkit-scrollbar {
-    width: 12px;
-    /* width of the entire scrollbar */
-}
-
-body::-webkit-scrollbar-track {
-    background: #0F2027;
-    /* fallback for old browsers */
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 102, 255);
-    /* color of the scroll thumb */
-    border-radius: 20px;
-    /* roundness of the scroll thumb */
-    border: 1px solid rgb(0, 0, 0);
-    /* creates padding around scroll thumb */
-}
-
-
-/*   <header>   */
-
-header {
-    display: flex;
-    position: top;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 
-
-/*Botão Voltar*/
-
-.backbutton {
-    position: relative;
-    display: flex;
-    top: 7px;
-    left: 10px;
-    border-radius: 19px;
-    padding: 15px;
-    background: -webkit-linear-gradient(to right, #ffffff 0%, #ffffff 100%);
-    background: -moz-linear-gradient(to right, #ffffff 0%, #ffffff 100%);
-    background: linear-gradient(to right, rgb(255, 255, 255) 0%, #ffffff 100%);
-    -webkit-background-clip: border-box;
-    -webkit-text-fill-color: transparent;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+body {
+    width: 90vw;
+    height: 100vh;
+    max-width: 900px;
 }
 
-.backbutton [src="image/arrow.png"] {
-    height: 25px;
-    position: relative;
-    left: 0px;
-    top: 0px;
-}
-
-
-/*Botão Voltar*/
-
-
-/*TEXTO USERS NO TOPO DA TELA*/
-
-.users {
-    position: relative;
-    font-family: Lato, sans-serif;
-    font-weight: 600;
-    font-size: 75px;
-    color: #00c3ff;
-    top: -10vh;
-}
-
-
-/*TEXTO USERS NO TOPO DA TELA*/
-
-
-/* TODA A PARTE DE PESQUISA NO TOPO DA PAGINA*/
-
-.input {
-    position: relative;
-    top: -3px;
-    left: 300px;
-    padding: 18px;
-    font-size: 20px;
-    border-style: none;
-    border-radius: 25px;
+.container-search {
     width: 100%;
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    height: 15%;
+    max-height: 100px;
 }
 
-.submit {
+.search-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.search-field {
     position: relative;
-    left: 690px;
-    top: -61px;
-    width: 20%;
-    padding: 19px;
-    background: #ffffff;
-    color: 0077ff;
-    font-size: 20px;
-    border-style: none;
+    width: 90%;
+    height: 85%;
+    border: 0px none;
     border-radius: 25px;
+    color: #ffffff;
+    font-size: 3rem;
+    background: #737E8C;
+    color: #ffffff;
+    text-align: center;
+    font-family: Koulen;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-field::placeholder {
+    color: #ffffff;
+    text-align: center;
+    font-family: Koulen;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-button {
+    position: relative;
+    width: 9%;
+    height: 85%;
+    border: 0px none;
+    border-radius: 25px;
+    margin-left: 1%;
+    background: #1973E5;
+    box-shadow: 0px 5px 4px rgb(0 0 0 / 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button:hover {
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    background: #1351a1;
 }
 
-
-/* TODA A PARTE DE PESQUISA NO TOPO DA PAGINA*/
-
-
-/*===============================================================================================================================================*/
-
-
-/*   <main>   */
-
-
-/*div quadrado de fundo primário*/
-
-#bg-square-query01 {
-    position: absolute;
-    top: 70px;
-    left: 0px;
-    width: 1900px;
-    height: 850px;
-    background-color: #ffffff00;
-    border-radius: 15px;
-    border-style: solid;
-    border-color: #66bfff77;
+.search-button img {
+    width: 60%;
 }
 
+.container-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    background: #737E8C;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
 
-/*div quadrado de funo primário*/
+.container-fields {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 
+.container-fields div {}
 
-/*TEXTO RESULTADO DENTRO DO QUADRADO PRINCIPAL*/
+.container-fields h2 {
+    width: 16%;
+    font-size: 2rem;
+    margin: 0px;
+    color: #ffffff;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
 
-.text-resultado {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
+.result1 {
+    width: 100%;
+    margin-top: 1%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.email-result {
+    width: 90%;
+    height: 9vh;
+    background: #333333;
+    margin-left: 5%;
+    border-radius: 25px;
+    max-width: 650px;
+    max-height: 82px;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.result2 {
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.senha-result {
+    width: 90%;
+    height: 8vh;
+    background: #333333;
+    margin-left: 5%;
+    border-radius: 25px;
+    max-width: 650px;
+    max-height: 82px;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.result3 {
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nome-result {
+    width: 90%;
+    height: 8vh;
+    background: #333333;
+    margin-left: 5%;
+    border-radius: 25px;
+    max-width: 650px;
+    max-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nome-result button {
+    width: 65px;
+    height: 65px;
+    border-radius: 25px;
+    border: 0px none;
+    margin-right: 1%;
+    background: #1973E5;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nome-result button:hover {
+    cursor: pointer;
+    background: #1351a1;
+}
+
+.nome-result button img {
+    width: 50%;
+}
+
+.result4 {
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sobrenome-result {
+    width: 90%;
+    height: 8vh;
+    background: #333333;
+    margin-left: 5%;
+    border-radius: 25px;
+    max-width: 650px;
+    max-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sobrenome-result button {
+    width: 65px;
+    height: 65px;
+    border-radius: 25px;
+    border: 0px none;
+    margin-right: 1%;
+    background: #1973E5;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sobrenome-result button:hover {
+    cursor: pointer;
+    background: #1351a1;
+}
+
+.sobrenome-result button img {
+    width: 50%;
+}
+
+.result5 {
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.rg-result {
+    width: 90%;
+    height: 8vh;
+    background: #333333;
+    margin-left: 5%;
+    border-radius: 25px;
+    max-width: 650px;
+    max-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rg-result button {
+    width: 65px;
+    height: 65px;
+    border-radius: 25px;
+    border: 0px none;
+    margin-right: 1%;
+    background: #1973E5;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.rg-result button:hover {
+    cursor: pointer;
+    background: #1351a1;
+}
+
+.rg-result button img {
+    width: 50%;
+}
+
+.result6 {
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cpf-result {
+    width: 90%;
+    height: 8vh;
+    background: #333333;
+    margin-left: 5%;
+    border-radius: 25px;
+    max-width: 650px;
+    max-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cpf-result button {
+    width: 65px;
+    height: 65px;
+    border-radius: 25px;
+    border: 0px none;
+    margin-right: 1%;
+    background: #1973E5;
+    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cpf-result button:hover {
+    cursor: pointer;
+    background: #1351a1;
+}
+
+.cpf-result button img {
+    width: 50%;
+}
+
+.container-delete {
     position: relative;
-    left: 870px;
-    top: -20px;
-    font-weight: 600;
-    font-size: 40px;
-    background: #ffffff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
-
-/*TEXTO RESULTADO DENTRO DO QUADRADO PRINCIPAL*/
-
-
-/*TRAÇO DE ESTILO ABAIXO DO "RESULTADO"*/
-
-#style-dash {
-    position: relative;
-    width: 5px;
-    height: 35px;
-    top: -40px;
-    left: 961px;
-    background-color: #00c3ff;
-    border-radius: 30px;
+.container-delete button {
+    width: 98%;
+    height: 10vh;
+    border: 0px none;
+    border-radius: 25px;
+    background: #BF4040;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
-/*TRAÇO DE ESTILO ABAIXO DO "RESULTADO"*/
-
-
-/*div quadrado de fundo secundário onde aparecem os resultados pesquisados*/
-
-#bg-square-query02 {
-    position: relative;
-    width: 1890px;
-    height: 735px;
-    top: -45px;
-    left: 5px;
-    background-color: #00000056;
-    border-radius: 30px;
+.container-delete button:hover {
+    cursor: pointer;
+    background: #962c2c;
 }
 
-
-/*div quadrado de fundo secundário onde aparecem os resultados pesquisados*/
-
-
-/*div com o quadrado com o resultado da pesquisa e ao lado o texto "Nome:"*/
-
-#resultsquare-nome {
-    width: 300px;
-    height: 50px;
-    top: 10px;
-    left: 80px;
-    position: relative;
-    background-color: #ffffff;
-    border-radius: 30px;
-}
-
-#resultsquare-nome [class="text-nome"] {
-    position: relative;
-    left: -70px;
-    top: 10px;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    position: relative;
-    font-weight: 600;
-    font-size: 20px;
-    background: #ffffff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-/*div com o quadrado com o resultado da pesquisa e ao lado o texto "Nome:"*/
-
-
-/*div com o quadrado com o resultado da pesquisa e ao lado o texto "Sobrenome:"*/
-
-#resultsquare-sobrenome {
-    width: 300px;
-    height: 50px;
-    top: 10px;
-    left: 520px;
-    position: absolute;
-    background-color: #ffffff;
-    border-radius: 30px;
-}
-
-#resultsquare-sobrenome [class="text-sobrenome"] {
-    position: absolute;
-    left: -120px;
-    top: -6px;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    background: #ffffff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-/*div com o quadrado com o resultado da pesquisa e ao lado o texto "Sobrenome:"*/
-
-
-/*div com o quadrado com o resultado da pesquisa e ao lado o texto "Email:"*/
-
-#resultsquare-email {
-    position: relative;
-    width: 300px;
-    height: 50px;
-    top: -40px;
-    left: 920px;
-    background-color: #ffffff;
-    border-radius: 30px;
-}
-
-#resultsquare-email [class="text-email"] {
-    position: relative;
-    left: -75px;
-    top: 0px;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    position: absolute;
-    font-weight: 600;
-    font-size: 20px;
-    background: #ffffff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-/*div com o quadrado com o resultado da pesquisa e ao lado o texto "Email:"*/
-
-
-/*div com o quadrado com o resultado da pesquisa e ao lado o texto "CPF:"*/
-
-#resultsquare-cpf {
-    position: relative;
-    width: 300px;
-    height: 50px;
-    top: -90px;
-    left: 1320px;
-    background-color: #ffffff;
-    border-radius: 30px;
-}
-
-#resultsquare-cpf [class="text-cpf"] {
-    position: relative;
-    left: -65px;
-    top: 0px;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    position: absolute;
-    font-weight: 600;
-    font-size: 20px;
-    background: #ffffff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-/*div com o quadrado com o resultado da pesquisa e ao lado o texto "CPF:"*/
-
-
-/*div com o quadrado com o resultado da pesquisa e ao lado o texto "RG:"*/
-
-#resultsquare-rg {
-    position: relative;
-    width: 300px;
-    height: 50px;
-    top: -60px;
-    left: 60px;
-    background-color: #ffffff;
-    border-radius: 30px;
-}
-
-#resultsquare-rg [class="text-rg"] {
-    position: relative;
-    left: -45px;
-    top: 0px;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    position: absolute;
-    font-weight: 600;
-    font-size: 20px;
-    background: #ffffff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-/*div com o quadrado com o resultado da pesquisa e ao lado o texto "RG:"*/
-
-#chart {
-    position: relative;
-    top: -500px;
-    width: 600px;
-    height: 600px;
+.container-delete button h2 {
+    width: 100%;
+    font-family: Koulen;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 0px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

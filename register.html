@@ -15,13 +15,25 @@
     </div>
     <div id="registersquare">
         <form action="register.php" method="post" class="registersquare02">
-            <input class="email" id="email_id" name="email_name" type="email" placeholder=" E-mail"><br>
-            <input class="senha" id="senha_id" name="senha_name" type="password" placeholder=" Senha"><br>
-            <input class="nome" id="nome_id" name="nome_name" type="text" placeholder=" Nome"><br>
-            <input class="sobrenome" name="sobrenome_name" id="sobrenome_id" type="text" placeholder=" Sobrenome"><br>
-            <input class="rg" id="rg_id" name="rg_name" type="number" placeholder=" RG"><br>
-            <input class="cpf" id="cpf_id" name="cpf_name" type="number" placeholder=" CPF"><br>
-            <input class="registerbutton" type="submit" id="submit_id" name="submit_name" value=" Cadastre-se"></input>
+            <div class="div-names">
+                <h2>E-MAIL</h2><input class="email" id="email_id" name="email_name" type="email" placeholder="DIGITE SEU E-MAIL"><br></div>
+            <div class="div-names">
+                <h2>SENHA</h2><input class="senha" id="senha_id" name="senha_name" type="password" placeholder="DIGITE SUA SENHA"><br></div>
+            <div class="div-names">
+                <h2>NOME</h2><input class="nome" id="nome_id" name="nome_name" type="text" placeholder="DIGITE SEU PRIMEIRO NOME"><br></div>
+            <div class="div-names">
+                <h2>SOBRENOME</h2><input class="sobrenome" name="sobrenome_name" id="sobrenome_id" type="text" placeholder="DIGITE SEU SOBRENOME"><br></div>
+            <div class="div-names">
+                <h2>RG</h2><input class="rg" id="rg_id" name="rg_name" type="number" placeholder="DIGITE SEU RG SEM PONTOS"><br></div>
+            <div class="div-names">
+                <h2>CPF</h2><input class="cpf" id="cpf_id" name="cpf_name" type="number" placeholder="DIGITE SEU CPF SEM PONTOS"><br></div>
+            <div class="buttons">
+                <input class="registerbutton" type="submit" id="submit_id" name="submit_name" value=" Cadastre-se"></input>
+                <a href="login.html">
+                    <input class="loginbutton" type="button" name="entrar" value="ENTRAR"></input>
+                </a>
+            </div>
+
         </form>
     </div>
 </body>

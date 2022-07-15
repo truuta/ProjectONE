@@ -1,107 +1,59 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Users</title>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo</title>
     <link rel="icon" href="image/logo.png">
-    <link rel="stylesheet" type="text/css" href="style/users.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/users.css">
+    <link rel="script" href="script/users.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1 class="users">USERS</h1>
-        <a class="backbutton" href="login.html"><img src="image/arrow.png" /></a>
-        <form id="pesquisa" action="users.php" method="post">
-            <input class="input" id="pesquisa" type="text" placeholder="Pesquisa" name="Pesquisa" />
-            <button class="submit" type="submit">
-          <i class="fa fa-search"></i>
-        </button>
-        </form>
-    </header>
-
-    <main>
-        <div id="bg-square-query01">
-            <h1 class="text-resultado">
-                Resultado
-            </h1>
-
-            <div id="style-dash">
-            </div>
-
-            <div id="bg-square-query02">
-
-                <div id="resultsquare-nome">
-                    <h2 class="text-nome">Nome:</h2>
-                </div>
-
-                <div id="resultsquare-sobrenome">
-                    <h2 class="text-sobrenome">Sobrenome:</h2>
-                </div>
-
-                <div id="resultsquare-email">
-                    <h2 class="text-email">E-mail:</h2>
-                </div>
-
-                <div id="resultsquare-cpf">
-                    <h2 class="text-cpf">CPF :</h2>
-                </div>
-
-                <div id="resultsquare-rg">
-                    <h2 class="text-rg">RG :</h2>
-                </div>
-            </div>
-
-            <!--GRÁFICO DATA DE CRIAÇÃO DE CONTAS-->
-            <div id="chart">
-                <canvas id="datechart"></canvas>
-                <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
-                <script>
-                    const labels = [
-                        "Janeiro",
-                        "Fevereiro",
-                        "Março",
-                        "Abril",
-                        "Maio",
-                        "Junho",
-                        "Julho",
-                        "Agosto",
-                        "Setembro",
-                        "Outubro",
-                        "Novembro",
-                        "Dezembro",
-                    ];
-
-                    const data = {
-                        labels: labels,
-                        datasets: [{
-                            label: "Contas criadas",
-                            backgroundColor: "rgb(255, 99, 132)",
-                            borderColor: "rgb(255, 99, 132)",
-                            data: [0, 10, 5, 2, 20, 30, 45, 20, 10, 23, 44],
-                        }, ],
-                    };
-
-                    const config = {
-                        type: "line",
-                        data: data,
-                        options: {},
-                    };
-                </script>
-                <script>
-                    const datechart = new Chart(
-                        document.getElementById("datechart"),
-                        config
-                    );
-                </script>
-            </div>
-
+    <div class="container-search">
+        <form action="users.php" method="post" class="search-form" id="search-form">
+            <input type="search" class="search-field" name="search-field" placeholder="PESQUISA">
+            <button type="submit" class="search-button" id="sarch-button" "><img
+                        src="image/search.png "alt=" "></button>
+            </form>
         </div>
+        <div class="container-content ">
+            <div class="container-fields ">
+                <div class="result1 ">
+                    <h2>email</h2>
+                    <div class="email-result ">
+                        <p id="email-data "></p>
+                    </div>
+                </div>
+                <div class="result2 ">
+                    <h2>senha</h2>
+                    <div class="senha-result "></div>
+                </div>
+                <div class="result3 ">
+                    <h2>nome</h2>
+                    <div class="nome-result "><button><img src="image/edit-image.png "></button></div>
+                </div>
+                <div class="result4 ">
+                    <h2>sobrenome</h2>
+                    <div class="sobrenome-result "><button><img src="image/edit-image.png "></button></div>
+                </div>
+                <div class="result5 ">
+                    <h2>rg</h2>
+                    <div class="rg-result ">
+                        <p id="result5 "></p><button><img src="image/edit-image.png "></button></div>
+                </div>
+                <div class="result6 ">
+                    <h2>cpf</h2>
+                    <div class="cpf-result "><button><img src="image/edit-image.png "></button></div>
+                </div>
+                <div class="container-delete ">
+                    <button class="delete "><h2>DELETAR CADASTRO</h2></button>
+                </div>
+            </div>
         </div>
-    </main>
-</body>
+        <script type="text/javascript "></script>
+    </body>
 
 </html>

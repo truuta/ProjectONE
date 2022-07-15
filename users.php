@@ -4,14 +4,20 @@ $user = 'root';
 $password = '';
 $database = 'users';
 
-$mysqli = $mysqli = new mysqli($host, $user, $password, $database );
+$conn = mysqli_connect( $host, $user, $password, $database );
 
-if (empty($_POST['pesquisa'])) {
-    header("Location: users.html");
-    exit;
+$pesquisar = $_POST[ 'search-field' ];
+$sql_select = "SELECT * FROM dados WHERE email LIKE '%$pesquisar%' OR nome LIKE '%$pesquisar%' OR sobrenome LIKE '%$pesquisar%' OR rg LIKE '%$pesquisar%' OR cpf LIKE '%$pesquisar%' LIMIT 1";
+$resultado = mysqli_query( $conn, $sql_select );
+
+while ( $rows = mysqli_fetch_array( $resultado ) ) {
+    echo $rows[ 'email' ].'<br>';
+    echo $rows[ 'senha' ].'<br>';
+    echo $rows[ 'nome' ].'<br>';
+    echo $rows[ 'sobrenome' ].'<br>';
+    echo $rows[ 'rg' ].'<br>';
+    echo $rows[ 'cpf' ].'<br>';
+
 }
 
-$pesquisa = mysqli_real_escape_string($mysqli, $_POST['pesquisa']);
-
-$sql = "SELECT `nome`, `sobrenome`, `email`, `cpf`, `rg` FROM `dados` WHERE (`nome`, `sobrenome`, `email`, `cpf`, `rg` = '" . $pesquisa . "')";
-$query = mysqli_query($mysqli, $sql);
+?>
